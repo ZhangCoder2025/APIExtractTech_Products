@@ -1,0 +1,23 @@
+{
+    "matplotlib.pyplot.subplots": ["matplotlib.figure.Figure","matplotlib.axes.Axes"],
+    "matplotlib.pyplot.subplot": "matplotlib.axes.Axes",
+    "matplotlib.pyplot.figure": "matplotlib.figure.Figure",
+    "matplotlib.pyplot.gcf": "matplotlib.figure.Figure",
+    "pandas.read_csv": "pandas.DataFrame",
+    "pandas.read_excel": "pandas.DataFrame",
+    "pandas.DataFrame": "pandas.DataFrame",
+    "numpy.array": "numpy.ndarray",
+    "numpy.loadtxt": "numpy.ndarray",
+    "pylab.figure.add_subplot":"matplotlib.axes.Axes",
+    "matplotlib.figure.Figure.add_subplot":"matplotlib.axes.Axes",
+    "matplotlib.axes.Axes.twinx":"matplotlib.axes.Axes",
+    "numpy.fromfile":"numpy.ndarray",
+    "pandas.DataFrame.pivot":"pandas.DataFrame",
+    "pandas.to_datetime":"datetime.datetime",
+    "numpy.cov":"numpy.ndarray",
+    "pandas.read_table":"pandas.DataFrame",
+    "pandas.DataFrame.from_dict":"pandas.DataFrame",
+    "scipy.stats.uniform":"scipy.stats._continuous_distns.uniform_gen",
+    "scipy.stats.uniform.pdf":"numpy.float64",
+    "pylab.figure":"matplotlib.figure.Figure"
+}

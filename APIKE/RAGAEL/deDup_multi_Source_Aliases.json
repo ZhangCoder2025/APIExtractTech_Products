@@ -1,0 +1,2615 @@
+{
+    "plt": {
+        "matplotlib.pyplot": 45550,
+        "pylab": 232,
+        "matplotlib": 176,
+        "pyplot": 18,
+        "matplotlib.pyplot.plot": 1,
+        "plot": 1
+    },
+    "fm": {
+        "matplotlib.font_manager": 34
+    },
+    "np": {
+        "numpy": 78518,
+        "pandas": 11,
+        "numpy.fft": 2,
+        "numpy.percentile": 1,
+        "scipy": 1
+    },
+    "matfigure": {
+        "matplotlib.figure": 1
+    },
+    "pl": {
+        "pylab": 393,
+        "matplotlib.pyplot": 113,
+        "pandas": 1
+    },
+    "PLT": {
+        "matplotlib.pyplot": 25
+    },
+    "RD": {
+        "random": 2
+    },
+    "PL": {
+        "pylab": 3
+    },
+    "SP": {
+        "scipy": 2
+    },
+    "NP": {
+        "numpy": 42
+    },
+    "mdates": {
+        "matplotlib.dates": 1045,
+        "matplotlib.dates.DateFormatter": 1
+    },
+    "mtickers": {
+        "matplotlib.ticker": 2
+    },
+    "mpatches": {
+        "matplotlib.patches": 269
+    },
+    "CM": {
+        "matplotlib.cm": 10
+    },
+    "pyl": {
+        "pylab": 11,
+        "matplotlib.pyplot": 1
+    },
+    "N": {
+        "numpy": 36,
+        "scipy": 1
+    },
+    "P": {
+        "pylab": 24,
+        "matplotlib.pyplot": 10,
+        "numpy.polynomial.polynomial": 4,
+        "polynomial": 2
+    },
+    "mtransforms": {
+        "matplotlib.transforms": 44
+    },
+    "mpl": {
+        "matplotlib": 1445,
+        "matplotlib.pyplot": 28
+    },
+    "nx": {
+        "matplotlib.nxutils": 3
+    },
+    "r": {
+        "random": 19,
+        "numpy.random": 3,
+        "random.uniform": 2,
+        "random.random": 2
+    },
+    "sch": {
+        "scipy.cluster.hierarchy": 21
+    },
+    "co": {
+        "collections": 7,
+        "matplotlib.colors": 2
+    },
+    "p": {
+        "pylab": 51,
+        "pandas": 46,
+        "matplotlib.pyplot": 45,
+        "numpy": 5,
+        "pprint": 1,
+        "matplotlib.collections.PolyCollection": 1,
+        "matplotlib": 1,
+        "numpy.polynomial.polynomial.Polynomial": 1,
+        "sklearn.preprocessing": 1
+    },
+    "m": {
+        "math": 76,
+        "matplotlib": 10,
+        "matplotlib.pyplot": 2,
+        "matplotlib.mlab": 2,
+        "sklearn.metrics": 2,
+        "matplotlib.markers": 1,
+        "numpy.linalg": 1
+    },
+    "DT": {
+        "datetime": 61,
+        "datetime.datetime": 2
+    },
+    "scv": {
+        "scipy.cluster.vq": 2
+    },
+    "mp": {
+        "multiprocessing": 149,
+        "matplotlib": 26,
+        "matplotlib.pyplot": 21,
+        "sklearn.pipeline.make_pipeline": 4,
+        "numpy": 2,
+        "matplotlib.path": 1,
+        "matplotlib.patches": 1,
+        "mahotas.polygon": 1
+    },
+    "md": {
+        "matplotlib.dates": 93
+    },
+    "mc": {
+        "matplotlib.collections": 20,
+        "matplotlib.colors": 7,
+        "matplotlib.cbook": 4,
+        "matplotlib.cm": 1
+    },
+    "a3": {
+        "mpl_toolkits.mplot3d": 9
+    },
+    "p3": {
+        "mpl_toolkits.mplot3d.axes3d": 48
+    },
+    "mscale": {
+        "matplotlib.scale": 13
+    },
+    "backend": {
+        "matplotlib.backends.backend_agg": 1
+    },
+    "plb": {
+        "pylab": 12
+    },
+    "py": {
+        "pylab": 26,
+        "matplotlib.pyplot": 22,
+        "numpy": 6,
+        "pandas": 1
+    },
+    "FigCanv": {
+        "matplotlib.backends.backend_wxagg.FigureCanvasWxAgg": 4
+    },
+    "Gamma": {
+        "scipy.special.gamma": 3
+    },
+    "cb": {
+        "matplotlib.colorbar": 5
+    },
+    "FigCanvas": {
+        "matplotlib.backends.backend_wxagg.FigureCanvasWxAgg": 8
+    },
+    "pp": {
+        "matplotlib.pyplot": 50,
+        "pprint": 8,
+        "sklearn.preprocessing": 2
+    },
+    "mplticker": {
+        "matplotlib.ticker": 1
+    },
+    "mpllines": {
+        "matplotlib.lines": 2
+    },
+    "M3": {
+        "mpl_toolkits.mplot3d": 1
+    },
+    "sp": {
+        "scipy": 469,
+        "scipy.sparse": 116,
+        "scipy.special": 24,
+        "scipy.stats": 16,
+        "scipy.signal": 8,
+        "scipy.spatial.distance": 6,
+        "scipy.spatial": 5,
+        "scipy.optimize": 4,
+        "scipy.fftpack": 3,
+        "scipy.ndimage": 2,
+        "scipy.linalg": 2,
+        "scipy.misc": 2,
+        "sklearn.preprocessing": 1
+    },
+    "mpimg": {
+        "matplotlib.image": 230,
+        "matplotlib": 1,
+        "matplotlib.pyplot": 1
+    },
+    "ndi": {
+        "scipy.ndimage": 36
+    },
+    "tick": {
+        "matplotlib.ticker": 9
+    },
+    "sm": {
+        "sklearn.metrics": 10,
+        "scipy.misc": 4,
+        "sklearn.model_selection": 2
+    },
+    "spinterp": {
+        "scipy.interpolate": 3
+    },
+    "mcolors": {
+        "matplotlib.colors": 181
+    },
+    "pts": {
+        "matplotlib.patches": 1
+    },
+    "a3d": {
+        "mpl_toolkits.mplot3d": 1
+    },
+    "tkr": {
+        "matplotlib.ticker": 49
+    },
+    "mplcm": {
+        "matplotlib.cm": 5
+    },
+    "M": {
+        "matplotlib": 5,
+        "numpy.ma": 2,
+        "math": 1,
+        "sklearn.gaussian_process.kernels.Matern": 1
+    },
+    "cmx": {
+        "matplotlib.cm": 10
+    },
+    "mpath": {
+        "matplotlib.path": 48
+    },
+    "sc": {
+        "scipy": 60,
+        "scipy.special": 11,
+        "scipy.stats": 5,
+        "scipy.ndimage": 5,
+        "scipy.optimize": 4,
+        "scipy.constants": 2,
+        "scipy.cluster.hierarchy": 2,
+        "scipy.io": 2,
+        "scipy.signal": 1,
+        "scipy.sparse.linalg": 1,
+        "sklearn.metrics.silhouette_score": 1,
+        "scipy.integrate": 1
+    },
+    "myColor": {
+        "matplotlib.colors": 1
+    },
+    "AA": {
+        "mpl_toolkits.axisartist": 44
+    },
+    "rn": {
+        "random": 5,
+        "numpy.random": 2
+    },
+    "mprojections": {
+        "matplotlib.projections": 1
+    },
+    "mspines": {
+        "matplotlib.spines": 3
+    },
+    "MPL": {
+        "matplotlib.pyplot": 1
+    },
+    "pt": {
+        "matplotlib.pyplot": 8,
+        "matplotlib.patches": 1,
+        "matplotlib": 1
+    },
+    "mticker": {
+        "matplotlib.ticker": 137
+    },
+    "tk": {
+        "matplotlib.ticker": 3
+    },
+    "hp": {
+        "numpy": 1
+    },
+    "npy": {
+        "numpy": 15
+    },
+    "ml": {
+        "matplotlib.mlab": 18,
+        "matplotlib": 2,
+        "matplotlib.lines": 1,
+        "matplotlib.ticker.MultipleLocator": 1,
+        "numpy.matlib": 1
+    },
+    "cbar": {
+        "matplotlib.colorbar": 3
+    },
+    "mplt": {
+        "matplotlib.pyplot": 6,
+        "matplotlib": 3
+    },
+    "matplot": {
+        "matplotlib.pyplot": 1
+    },
+    "mtrans": {
+        "matplotlib.transforms": 22
+    },
+    "cal": {
+        "calendar": 4
+    },
+    "pltlib": {
+        "matplotlib.pyplot": 1
+    },
+    "ss": {
+        "scipy.stats": 90,
+        "scipy.sparse": 12,
+        "scipy.signal": 4,
+        "scipy.spatial": 4,
+        "scipy.special": 2
+    },
+    "pd": {
+        "pandas": 70746,
+        "numpy": 8,
+        "pandas.read_csv": 1,
+        "matplotlib.pyplot": 1,
+        "pandas.io.parsers": 1
+    },
+    "npr": {
+        "numpy.random": 27
+    },
+    "mdate": {
+        "matplotlib.dates": 19
+    },
+    "sd": {
+        "scipy.spatial.distance": 6
+    },
+    "pytl": {
+        "matplotlib.pyplot": 2
+    },
+    "img": {
+        "matplotlib.image": 13
+    },
+    "c": {
+        "matplotlib.colors": 7,
+        "collections": 4,
+        "ctypes": 4
+    },
+    "opt": {
+        "scipy.optimize": 104
+    },
+    "mplfig": {
+        "matplotlib.figure": 3
+    },
+    "dist": {
+        "scipy.spatial.distance": 14
+    },
+    "mcl": {
+        "matplotlib.colors": 2
+    },
+    "tm": {
+        "time": 9,
+        "pandas.testing": 1
+    },
+    "muints": {
+        "matplotlib.units": 2
+    },
+    "it": {
+        "itertools": 147,
+        "scipy.integrate": 2
+    },
+    "mlp": {
+        "matplotlib": 11,
+        "matplotlib.pyplot": 4
+    },
+    "d": {
+        "matplotlib.dates": 12,
+        "scipy.spatial.distance": 6,
+        "datetime": 2,
+        "sklearn.datasets": 1
+    },
+    "rd": {
+        "random": 53,
+        "numpy.random": 22,
+        "random.random": 2,
+        "scipy.stats.rankdata": 2
+    },
+    "mlines": {
+        "matplotlib.lines": 54
+    },
+    "mtick": {
+        "matplotlib.ticker": 97
+    },
+    "pds": {
+        "pandas": 11
+    },
+    "manimation": {
+        "matplotlib.animation": 8
+    },
+    "nm": {
+        "numpy": 14,
+        "numpy.matlib": 1
+    },
+    "dc": {
+        "copy": 1
+    },
+    "stat": {
+        "scipy.stats": 8
+    },
+    "nprnd": {
+        "numpy.random": 9
+    },
+    "Size": {
+        "mpl_toolkits.axes_grid1.axes_size": 1
+    },
+    "nr": {
+        "numpy.random": 9
+    },
+    "so": {
+        "scipy.optimize": 32
+    },
+    "df": {
+        "pandas.DataFrame": 53,
+        "pandas": 6
+    },
+    "anim": {
+        "matplotlib.animation": 36
+    },
+    "mwx": {
+        "matplotlib.backends.backend_wxagg": 2
+    },
+    "cmps": {
+        "matplotlib.cm": 1
+    },
+    "mlegend": {
+        "matplotlib.legend": 1
+    },
+    "col": {
+        "matplotlib.colors": 8
+    },
+    "sps": {
+        "scipy.sparse": 56,
+        "scipy.stats": 22,
+        "scipy.special": 19,
+        "scipy.signal": 9
+    },
+    "mplFigure": {
+        "matplotlib.figure.Figure": 1
+    },
+    "mplCanvas": {
+        "matplotlib.backends.backend_wxagg.FigureCanvasWxAgg": 1
+    },
+    "mcm": {
+        "matplotlib.cm": 5
+    },
+    "hier": {
+        "scipy.cluster.hierarchy": 3
+    },
+    "cols": {
+        "matplotlib.colors": 3
+    },
+    "Leg": {
+        "scipy.special.eval_legendre": 2
+    },
+    "mt": {
+        "math": 24,
+        "sklearn.metrics": 2,
+        "matplotlib.ticker": 1,
+        "matplotlib.transforms": 1,
+        "mahotas": 1
+    },
+    "grd": {
+        "matplotlib.gridspec": 6
+    },
+    "manim": {
+        "matplotlib.animation": 3
+    },
+    "mplot": {
+        "matplotlib.pyplot": 12,
+        "matplotlib": 1
+    },
+    "FCW": {
+        "matplotlib.backends.backend_wxagg.FigureCanvasWxAgg": 1
+    },
+    "plticker": {
+        "matplotlib.ticker": 33
+    },
+    "hac": {
+        "scipy.cluster.hierarchy": 12
+    },
+    "mtri": {
+        "matplotlib.tri": 30
+    },
+    "Canvas": {
+        "matplotlib.backends.backend_wxagg.FigureCanvasWxAgg": 2
+    },
+    "pyp": {
+        "matplotlib.pyplot": 4
+    },
+    "rnd": {
+        "numpy.random": 36,
+        "random": 19,
+        "numpy.random.random": 2
+    },
+    "F": {
+        "matplotlib.figure.Figure": 1
+    },
+    "SL": {
+        "scipy.linalg": 1
+    },
+    "fig": {
+        "matplotlib.figure": 5
+    },
+    "mfigure": {
+        "matplotlib.figure": 3
+    },
+    "st": {
+        "scipy.stats": 138,
+        "scipy": 2,
+        "numpy.lib.stride_tricks": 1
+    },
+    "mfig": {
+        "matplotlib.figure": 3
+    },
+    "lm": {
+        "sklearn.linear_model": 19,
+        "sklearn.linear_model.LinearRegression": 4
+    },
+    "gs": {
+        "matplotlib.gridspec": 9
+    },
+    "_imread": {
+        "matplotlib.image.imread": 1
+    },
+    "hicl": {
+        "scipy.cluster.hierarchy": 4
+    },
+    "nmp": {
+        "numpy": 1
+    },
+    "spinp": {
+        "scipy.interpolate": 1
+    },
+    "spop": {
+        "scipy.optimize": 3
+    },
+    "wav": {
+        "scipy.io.wavfile": 11
+    },
+    "pot": {
+        "matplotlib.pyplot": 2
+    },
+    "mgimg": {
+        "matplotlib.image": 4
+    },
+    "spl": {
+        "scipy.linalg": 6,
+        "scipy.special": 1,
+        "scipy.interpolate.UnivariateSpline": 1
+    },
+    "mathy": {
+        "math": 3
+    },
+    "sprs": {
+        "scipy.sparse": 1
+    },
+    "cmap": {
+        "matplotlib.cm": 3,
+        "matplotlib": 1
+    },
+    "mpd": {
+        "matplotlib.dates": 5
+    },
+    "sy": {
+        "scipy": 9
+    },
+    "fmg": {
+        "matplotlib.font_manager": 1
+    },
+    "martist": {
+        "matplotlib.artist": 5
+    },
+    "gridsp": {
+        "matplotlib.gridspec": 1
+    },
+    "fs": {
+        "matplotlib.pyplot": 2
+    },
+    "ax": {
+        "matplotlib.axes": 5,
+        "matplotlib.axes.Axes": 2
+    },
+    "pe": {
+        "matplotlib.patheffects": 4
+    },
+    "ppl": {
+        "matplotlib.pyplot": 2
+    },
+    "itoo": {
+        "itertools": 2
+    },
+    "mcol": {
+        "matplotlib.colors": 14
+    },
+    "clrs": {
+        "matplotlib.colors": 3
+    },
+    "maxis": {
+        "matplotlib.axis": 3
+    },
+    "mimage": {
+        "matplotlib.image": 5
+    },
+    "IT": {
+        "itertools": 48
+    },
+    "s": {
+        "scipy.stats": 12,
+        "scipy": 10,
+        "sklearn": 4,
+        "scipy.sparse": 2,
+        "scipy.integrate": 2,
+        "numpy.subtract": 1,
+        "scipy.signal": 1
+    },
+    "l": {
+        "scipy.sparse": 2,
+        "numpy.linalg": 2
+    },
+    "lin": {
+        "numpy.linalg": 5,
+        "scipy.linalg": 4
+    },
+    "gd": {
+        "scipy.interpolate.griddata": 3
+    },
+    "mplimg": {
+        "matplotlib.image": 5
+    },
+    "mpl_text": {
+        "matplotlib.text": 1
+    },
+    "mks": {
+        "matplotlib.markers": 1
+    },
+    "ps": {
+        "pandas": 14
+    },
+    "sg": {
+        "scipy.signal": 7
+    },
+    "la": {
+        "scipy.linalg": 50,
+        "numpy.linalg": 35,
+        "scipy.sparse.linalg": 3
+    },
+    "pdplt": {
+        "pandas.plotting": 2
+    },
+    "Math": {
+        "numpy": 2
+    },
+    "mpimage": {
+        "matplotlib.image": 3
+    },
+    "spi": {
+        "scipy.integrate": 16,
+        "scipy.interpolate": 4
+    },
+    "mcoll": {
+        "matplotlib.collections": 7
+    },
+    "dtm": {
+        "datetime": 11,
+        "datetime.datetime": 3
+    },
+    "cl": {
+        "matplotlib.colors": 4,
+        "calendar": 1
+    },
+    "path_effects": {
+        "matplotlib.patheffects": 9
+    },
+    "qt": {
+        "matplotlib.pyplot": 2
+    },
+    "mplplt": {
+        "matplotlib.pyplot": 2
+    },
+    "mpltf": {
+        "matplotlib.transforms": 2
+    },
+    "ptc": {
+        "matplotlib.patches": 4
+    },
+    "clr": {
+        "matplotlib.colors": 12,
+        "matplotlib.pyplot": 1
+    },
+    "cls": {
+        "matplotlib.colors": 5
+    },
+    "const": {
+        "scipy.constants": 3
+    },
+    "tx": {
+        "matplotlib.transforms": 1
+    },
+    "sk": {
+        "sklearn": 33,
+        "sklearn.linear_model": 7,
+        "sklearn.metrics": 2
+    },
+    "wxagg": {
+        "matplotlib.backends.backend_wxagg": 1
+    },
+    "lsc": {
+        "matplotlib.colors.LinearSegmentedColormap": 1
+    },
+    "mb": {
+        "numpy.matlib": 3,
+        "matplotlib.backend_bases.MouseButton": 1
+    },
+    "proj": {
+        "matplotlib.projections": 2
+    },
+    "mdt": {
+        "matplotlib.dates": 1
+    },
+    "mp_img": {
+        "matplotlib.image": 1
+    },
+    "mplPath": {
+        "matplotlib.path": 11
+    },
+    "mticks": {
+        "matplotlib.ticker": 5
+    },
+    "randy": {
+        "random": 4
+    },
+    "cmaps": {
+        "colormaps": 3
+    },
+    "mPlotDATEs": {
+        "matplotlib.dates": 3
+    },
+    "PP": {
+        "numpy.polynomial.polynomial": 2,
+        "pylab": 1
+    },
+    "sk_confusion_matrix": {
+        "sklearn.metrics.confusion_matrix": 3
+    },
+    "plt2": {
+        "matplotlib.pyplot": 3
+    },
+    "gspec": {
+        "matplotlib.gridspec": 5
+    },
+    "im": {
+        "PIL.Image": 7,
+        "scipy.ndimage": 4
+    },
+    "ct": {
+        "ctypes": 8,
+        "sklearn.compose.ColumnTransformer": 7,
+        "matplotlib.ticker": 1,
+        "numpy.ctypeslib": 1
+    },
+    "sig": {
+        "scipy.signal": 20
+    },
+    "pn": {
+        "pandas": 13
+    },
+    "ar": {
+        "numpy.array": 4,
+        "arrow": 2,
+        "array": 2
+    },
+    "z": {
+        "pylab": 4
+    },
+    "LA": {
+        "numpy.linalg": 52,
+        "scipy.linalg": 5,
+        "scipy.sparse.linalg": 1
+    },
+    "grid_spec": {
+        "matplotlib.gridspec": 2
+    },
+    "chart": {
+        "matplotlib.pyplot": 2
+    },
+    "mpltPath": {
+        "matplotlib.path": 5
+    },
+    "pltt": {
+        "matplotlib.pyplot": 3
+    },
+    "matpatches": {
+        "matplotlib.patches": 1
+    },
+    "panda": {
+        "pandas": 10
+    },
+    "mpl_colors": {
+        "matplotlib.colors": 1
+    },
+    "matdates": {
+        "matplotlib.dates": 2
+    },
+    "mplstyle": {
+        "matplotlib.style": 1
+    },
+    "pet": {
+        "matplotlib.pyplot": 1
+    },
+    "plab": {
+        "pylab": 2
+    },
+    "pplot": {
+        "matplotlib.pyplot": 1
+    },
+    "rad": {
+        "numpy.radians": 3
+    },
+    "am": {
+        "matplotlib.animation": 2
+    },
+    "mtext": {
+        "matplotlib.text": 5
+    },
+    "sio": {
+        "scipy.io": 75,
+        "scipy.optimize": 10
+    },
+    "mpclr": {
+        "matplotlib.colors": 1
+    },
+    "tr": {
+        "matplotlib.tri": 1,
+        "matplotlib.transforms": 1
+    },
+    "hc": {
+        "scipy.cluster.hierarchy": 3
+    },
+    "scistats": {
+        "scipy.stats": 7
+    },
+    "gcb": {
+        "matplotlib.backend_bases.GraphicsContextBase": 1
+    },
+    "mpt": {
+        "matplotlib.image": 2,
+        "matplotlib.pyplot": 1
+    },
+    "mpp": {
+        "matplotlib.pyplot": 2
+    },
+    "mi": {
+        "matplotlib.image": 2,
+        "scipy.misc": 1
+    },
+    "amt": {
+        "matplotlib.animation": 2
+    },
+    "db": {
+        "datetime": 1
+    },
+    "tck": {
+        "matplotlib.ticker": 12
+    },
+    "pltplot": {
+        "matplotlib.pyplot": 1
+    },
+    "matcoll": {
+        "matplotlib.collections": 1
+    },
+    "mproj": {
+        "matplotlib.projections": 1
+    },
+    "mpatch": {
+        "matplotlib.patches": 2
+    },
+    "ani": {
+        "matplotlib.animation": 30
+    },
+    "bi": {
+        "bisect": 1
+    },
+    "tic": {
+        "matplotlib.ticker": 2
+    },
+    "il": {
+        "mpl_toolkits.axes_grid1.inset_locator": 2
+    },
+    "ran": {
+        "random": 1
+    },
+    "mp3d": {
+        "mpl_toolkits.mplot3d": 2
+    },
+    "mcollections": {
+        "matplotlib.collections": 2
+    },
+    "bb": {
+        "numpy": 2
+    },
+    "mpl_il": {
+        "mpl_toolkits.axes_grid1.inset_locator": 1
+    },
+    "hclust": {
+        "scipy.cluster.hierarchy": 2
+    },
+    "mw": {
+        "matplotlib.widgets": 4
+    },
+    "coll": {
+        "collections": 2,
+        "matplotlib.collections": 1
+    },
+    "rr": {
+        "random": 1
+    },
+    "mpImage": {
+        "matplotlib.image": 1
+    },
+    "pltdt": {
+        "matplotlib.dates": 1
+    },
+    "maxes": {
+        "matplotlib.axes": 2
+    },
+    "scs": {
+        "scipy.stats": 11,
+        "scipy.signal": 2,
+        "scipy": 1
+    },
+    "pdK": {
+        "pandas": 2
+    },
+    "dts": {
+        "matplotlib.dates": 4,
+        "sklearn.datasets": 1
+    },
+    "plty": {
+        "matplotlib.pyplot": 1
+    },
+    "mmark": {
+        "matplotlib.markers": 1
+    },
+    "tts": {
+        "sklearn.model_selection.train_test_split": 11
+    },
+    "plta": {
+        "matplotlib": 2
+    },
+    "mpl_cm": {
+        "matplotlib.cm": 2
+    },
+    "mlt": {
+        "matplotlib.pyplot": 4,
+        "matplotlib": 3
+    },
+    "C": {
+        "sklearn.gaussian_process.kernels.ConstantKernel": 9,
+        "ctypes": 2
+    },
+    "pllt": {
+        "pylab": 1
+    },
+    "anm": {
+        "matplotlib.animation": 2
+    },
+    "clt": {
+        "matplotlib.collections": 2
+    },
+    "inter": {
+        "scipy.interpolate": 7
+    },
+    "gsp": {
+        "matplotlib.gridspec": 1
+    },
+    "ut": {
+        "utils": 1
+    },
+    "optimization": {
+        "scipy.optimize": 19
+    },
+    "sgn": {
+        "scipy.signal": 7
+    },
+    "intr": {
+        "scipy.interpolate": 4
+    },
+    "mpe": {
+        "matplotlib.patheffects": 3
+    },
+    "da": {
+        "datetime": 3
+    },
+    "PImage": {
+        "PIL.Image": 5
+    },
+    "spio": {
+        "scipy.io": 22
+    },
+    "pat": {
+        "matplotlib.patches": 6,
+        "matplotlib.pyplot": 2
+    },
+    "mplib": {
+        "matplotlib": 1
+    },
+    "Fig": {
+        "matplotlib.figure.Figure": 3
+    },
+    "mpplot": {
+        "matplotlib.pyplot": 4
+    },
+    "sts": {
+        "scipy.stats": 39
+    },
+    "npl": {
+        "numpy.linalg": 2
+    },
+    "mlc": {
+        "matplotlib.colors": 1
+    },
+    "skld": {
+        "sklearn.datasets": 2
+    },
+    "si": {
+        "scipy.integrate": 18,
+        "scipy.interpolate": 10,
+        "scipy.stats": 3,
+        "numpy.distutils.system_info": 1,
+        "scipy.io": 1,
+        "scipy.ndimage": 1,
+        "sklearn.impute.SimpleImputer": 1,
+        "scipy.optimize": 1
+    },
+    "plt_p": {
+        "matplotlib.patches": 2
+    },
+    "PathEffects": {
+        "matplotlib.patheffects": 8
+    },
+    "pltPath": {
+        "matplotlib.path": 2
+    },
+    "mmarkers": {
+        "matplotlib.markers": 1
+    },
+    "mwidgets": {
+        "matplotlib.widgets": 6
+    },
+    "GMM": {
+        "sklearn.mixture.GaussianMixture": 4
+    },
+    "scignal": {
+        "scipy.signal": 2
+    },
+    "mpfig": {
+        "matplotlib.figure": 2
+    },
+    "mpback": {
+        "matplotlib.backends.backend_agg": 2
+    },
+    "TEXT": {
+        "matplotlib.pyplot.text": 3
+    },
+    "mpim": {
+        "matplotlib.image": 1
+    },
+    "mpl_patches": {
+        "matplotlib.patches": 2
+    },
+    "nump": {
+        "numpy": 3
+    },
+    "ins": {
+        "mpl_toolkits.axes_grid1.inset_locator": 1
+    },
+    "plti": {
+        "matplotlib.image": 2
+    },
+    "js": {
+        "json": 4,
+        "scipy.spatial.distance.jensenshannon": 1
+    },
+    "pa": {
+        "pandas": 15
+    },
+    "mpl_fig": {
+        "matplotlib.figure": 2
+    },
+    "pltdates": {
+        "matplotlib.dates": 1
+    },
+    "hcluster": {
+        "scipy.cluster.hierarchy": 7
+    },
+    "ssd": {
+        "scipy.spatial.distance": 14
+    },
+    "art": {
+        "matplotlib.artist.Artist": 1
+    },
+    "axess": {
+        "matplotlib.axes": 1
+    },
+    "mwg": {
+        "matplotlib.widgets": 1
+    },
+    "pylt": {
+        "matplotlib.pyplot": 1
+    },
+    "pyplt": {
+        "matplotlib.pyplot": 2
+    },
+    "mplcol": {
+        "matplotlib.colors": 2
+    },
+    "mping": {
+        "matplotlib.image": 1
+    },
+    "spint": {
+        "scipy.interpolate": 5
+    },
+    "scp": {
+        "scipy": 6
+    },
+    "pilim": {
+        "PIL.Image": 4
+    },
+    "HourLocater": {
+        "matplotlib.dates.HourLocator": 2
+    },
+    "mpl_dates": {
+        "matplotlib.dates": 18
+    },
+    "pyt": {
+        "matplotlib.pyplot": 4,
+        "plotting": 3
+    },
+    "ply": {
+        "matplotlib.pyplot": 5
+    },
+    "itp": {
+        "scipy.interpolate": 4
+    },
+    "nf": {
+        "numpy.fft": 5
+    },
+    "cs": {
+        "scipy.constants": 2,
+        "collections": 1,
+        "csv": 1,
+        "scipy": 1
+    },
+    "spc": {
+        "scipy.constants": 3,
+        "scipy.special": 1
+    },
+    "pyint": {
+        "scipy.integrate": 1
+    },
+    "make": {
+        "scipy.interpolate.make_interp_spline": 1
+    },
+    "ptch": {
+        "matplotlib.patches": 2
+    },
+    "mcolorbar": {
+        "matplotlib.colorbar": 2
+    },
+    "mcat": {
+        "matplotlib.category": 4
+    },
+    "sdist": {
+        "scipy.spatial.distance": 3
+    },
+    "td": {
+        "datetime.timedelta": 16
+    },
+    "pls": {
+        "matplotlib.pyplot": 2
+    },
+    "plt3d": {
+        "mpl_toolkits.mplot3d.axes3d": 2
+    },
+    "artplt3d": {
+        "mpl_toolkits.mplot3d.art3d": 2
+    },
+    "use_agg": {
+        "matplotlib.use": 3
+    },
+    "mpdates": {
+        "matplotlib.dates": 2
+    },
+    "nd": {
+        "scipy.ndimage": 10,
+        "numpy": 3
+    },
+    "mPath": {
+        "matplotlib.path": 2
+    },
+    "mPatches": {
+        "matplotlib.patches": 2
+    },
+    "mcbar": {
+        "matplotlib.colorbar": 2
+    },
+    "plts": {
+        "matplotlib.pyplot": 3
+    },
+    "tp": {
+        "typing": 1
+    },
+    "matplotlib_cm": {
+        "matplotlib.cm": 2
+    },
+    "colors_tmp": {
+        "matplotlib.colors": 2
+    },
+    "rect": {
+        "matplotlib.patches.Rectangle": 1
+    },
+    "rmse": {
+        "sklearn.metrics.mean_squared_error": 1
+    },
+    "mtic": {
+        "matplotlib.ticker": 2
+    },
+    "dd": {
+        "collections.defaultdict": 4,
+        "datetime": 1
+    },
+    "grafico": {
+        "matplotlib.pyplot": 1
+    },
+    "mcolor": {
+        "matplotlib.colors": 6
+    },
+    "mae": {
+        "sklearn.metrics.mean_absolute_error": 10
+    },
+    "mse": {
+        "sklearn.metrics.mean_squared_error": 6
+    },
+    "plotter": {
+        "matplotlib.pyplot": 6
+    },
+    "mtpl": {
+        "matplotlib": 1
+    },
+    "sp1": {
+        "scipy.special": 1
+    },
+    "BT": {
+        "matplotlib.widgets.Button": 2
+    },
+    "pltd": {
+        "matplotlib.dates": 2
+    },
+    "pylot": {
+        "matplotlib.pyplot": 2
+    },
+    "tme": {
+        "time": 1
+    },
+    "pb": {
+        "pylab": 3
+    },
+    "readWav": {
+        "scipy.io.wavfile.read": 1
+    },
+    "gplot1": {
+        "matplotlib.pyplot": 1
+    },
+    "gplot2": {
+        "matplotlib.pyplot": 1
+    },
+    "pit": {
+        "matplotlib.pyplot": 3
+    },
+    "m_use": {
+        "matplotlib.use": 1
+    },
+    "mcollection": {
+        "matplotlib.collections": 1
+    },
+    "MatPlotLibPlot": {
+        "matplotlib.pyplot": 1
+    },
+    "npt": {
+        "numpy.typing": 13,
+        "numpy.testing": 1
+    },
+    "stl": {
+        "matplotlib.style": 1
+    },
+    "__plt": {
+        "matplotlib.pyplot": 1
+    },
+    "datapath": {
+        "matplotlib.get_data_path": 1
+    },
+    "mpr": {
+        "multiprocessing": 2
+    },
+    "lc": {
+        "matplotlib.collections.LineCollection": 1
+    },
+    "mpwidgets": {
+        "matplotlib.widgets": 5
+    },
+    "mpat": {
+        "matplotlib.patches": 4
+    },
+    "npp": {
+        "numpy.polynomial.polynomial": 4,
+        "numpy": 2,
+        "numpy.polynomial": 1
+    },
+    "phys": {
+        "scipy.constants": 2
+    },
+    "plt1": {
+        "matplotlib.pyplot": 1
+    },
+    "pnd": {
+        "pandas": 15
+    },
+    "iter": {
+        "itertools": 5
+    },
+    "web": {
+        "numpy": 2
+    },
+    "IUS": {
+        "scipy.interpolate.InterpolatedUnivariateSpline": 8
+    },
+    "npg": {
+        "numpy": 1
+    },
+    "conv": {
+        "scipy.ndimage.convolve1d": 2
+    },
+    "Spline": {
+        "scipy.interpolate.UnivariateSpline": 2,
+        "scipy.interpolate.InterpolatedUnivariateSpline": 1
+    },
+    "R": {
+        "random": 2,
+        "numpy.random": 1,
+        "random.randint": 1,
+        "sklearn.gaussian_process.kernels.RBF": 1
+    },
+    "rfn": {
+        "numpy.lib.recfunctions": 14
+    },
+    "gnb": {
+        "sklearn.naive_bayes.GaussianNB": 4
+    },
+    "DV": {
+        "sklearn.feature_extraction.DictVectorizer": 5
+    },
+    "pto": {
+        "pandas.tseries.offsets": 1
+    },
+    "stride": {
+        "numpy.lib.stride_tricks": 3,
+        "numpy.lib.stride_tricks.as_strided": 1
+    },
+    "PandasDataFrame": {
+        "pandas.DataFrame": 2
+    },
+    "ptypes": {
+        "pandas.api.types": 3
+    },
+    "mh": {
+        "mahotas": 1
+    },
+    "RandomizedPCA": {
+        "sklearn.decomposition.PCA": 2
+    },
+    "FE": {
+        "sklearn.feature_extraction": 2
+    },
+    "pld": {
+        "matplotlib.dates": 1
+    },
+    "pns": {
+        "pandas": 1
+    },
+    "opti": {
+        "scipy.optimize": 4
+    },
+    "SSD": {
+        "scipy.spatial.distance": 2
+    },
+    "sksvm": {
+        "sklearn.svm": 1
+    },
+    "cc": {
+        "collections": 1
+    },
+    "dtt": {
+        "datetime.datetime": 2
+    },
+    "skl": {
+        "sklearn": 9
+    },
+    "ew": {
+        "pandas.ExcelWriter": 1
+    },
+    "bs": {
+        "bisect": 3
+    },
+    "conv2": {
+        "scipy.signal.convolve2d": 14
+    },
+    "strided": {
+        "numpy.lib.stride_tricks.as_strided": 17
+    },
+    "pplt": {
+        "matplotlib.pyplot": 2
+    },
+    "pf": {
+        "pandas": 1
+    },
+    "todt": {
+        "pandas.to_datetime": 1
+    },
+    "totd": {
+        "pandas.to_timedelta": 1
+    },
+    "lk": {
+        "sklearn.model_selection.train_test_split": 4
+    },
+    "sco": {
+        "scipy.optimize": 8
+    },
+    "DF": {
+        "pandas.DataFrame": 4
+    },
+    "pd1": {
+        "pandas": 1
+    },
+    "ntv": {
+        "pandas.Interval": 2
+    },
+    "rwindow": {
+        "pandas.core.window": 1
+    },
+    "cv": {
+        "sklearn.feature_extraction.text.CountVectorizer": 8,
+        "sklearn.model_selection.cross_val_score": 1,
+        "sklearn.model_selection": 1,
+        "scipy.signal.convolve": 1
+    },
+    "pw": {
+        "sklearn.metrics.pairwise": 2
+    },
+    "gpr": {
+        "sklearn.gaussian_process.GaussianProcessRegressor": 5
+    },
+    "PD": {
+        "pandas": 6
+    },
+    "idx": {
+        "pandas.IndexSlice": 3
+    },
+    "pyholidays": {
+        "holidays": 3
+    },
+    "pltdate": {
+        "matplotlib.dates": 1
+    },
+    "sct": {
+        "scipy.stats": 5
+    },
+    "spr": {
+        "scipy.stats.spearmanr": 2,
+        "scipy.sparse": 2
+    },
+    "pre": {
+        "sklearn.preprocessing": 4
+    },
+    "lr": {
+        "sklearn.linear_model.LinearRegression": 4
+    },
+    "cr": {
+        "pandas": 2
+    },
+    "spo": {
+        "scipy.optimize": 14
+    },
+    "lNDI": {
+        "scipy.interpolate.LinearNDInterpolator": 1
+    },
+    "pd2": {
+        "pandas": 1
+    },
+    "pd_json": {
+        "pandas.io.json": 2
+    },
+    "Nan": {
+        "numpy.nan": 2
+    },
+    "tstamp": {
+        "pandas.Timestamp": 1
+    },
+    "ddt": {
+        "datetime.datetime": 1
+    },
+    "ny": {
+        "numpy": 2
+    },
+    "nrand": {
+        "numpy.random": 5
+    },
+    "edt": {
+        "scipy.ndimage.distance_transform_edt": 4
+    },
+    "dat": {
+        "datetime": 1
+    },
+    "itr": {
+        "itertools": 3
+    },
+    "pctl": {
+        "scipy.stats.percentileofscore": 2
+    },
+    "array_mean": {
+        "numpy.mean": 2
+    },
+    "of": {
+        "pandas.tseries.offsets": 1
+    },
+    "colls": {
+        "collections": 2
+    },
+    "spsp": {
+        "scipy.spatial": 7,
+        "scipy.sparse": 5
+    },
+    "ddict": {
+        "collections.defaultdict": 1
+    },
+    "avg": {
+        "numpy.ma.average": 2
+    },
+    "mlpt": {
+        "matplotlib.pyplot": 1
+    },
+    "coloring": {
+        "matplotlib.colors.LinearSegmentedColormap": 2
+    },
+    "npd": {
+        "numpy": 2
+    },
+    "pdx": {
+        "pandas": 1
+    },
+    "clstr": {
+        "sklearn.cluster": 1
+    },
+    "itt": {
+        "itertools": 1
+    },
+    "rho": {
+        "scipy.stats.pearsonr": 2
+    },
+    "mi_reg": {
+        "sklearn.feature_selection.mutual_info_regression": 2
+    },
+    "CS": {
+        "scipy.interpolate.CubicSpline": 1
+    },
+    "is_datetime": {
+        "pandas.api.types.is_datetime64_any_dtype": 4
+    },
+    "arr": {
+        "array": 2
+    },
+    "inp": {
+        "scipy.interpolate": 11
+    },
+    "prtl": {
+        "scipy.stats.percentileofscore": 1
+    },
+    "mvn": {
+        "scipy.stats.multivariate_normal": 5,
+        "numpy.random.multivariate_normal": 2
+    },
+    "selector": {
+        "sklearn.compose.make_column_selector": 8
+    },
+    "gb": {
+        "itertools.groupby": 1
+    },
+    "pdfrom": {
+        "pandas": 1
+    },
+    "ap": {
+        "pandas": 1
+    },
+    "MAE": {
+        "sklearn.metrics.mean_absolute_error": 4
+    },
+    "TTS": {
+        "sklearn.model_selection.train_test_split": 2
+    },
+    "hr": {
+        "sklearn.linear_model.HuberRegressor": 3
+    },
+    "j": {
+        "json": 3
+    },
+    "KNR": {
+        "sklearn.neighbors.KNeighborsRegressor": 4
+    },
+    "mtp": {
+        "matplotlib": 1
+    },
+    "ri": {
+        "random.randint": 3
+    },
+    "dtm_date": {
+        "datetime.date": 1
+    },
+    "Pds": {
+        "pandas": 2
+    },
+    "anova": {
+        "scipy.stats.f_oneway": 2
+    },
+    "swv": {
+        "numpy.lib.stride_tricks.sliding_window_view": 7
+    },
+    "dtdt": {
+        "datetime.datetime": 1
+    },
+    "rng": {
+        "numpy.random": 3,
+        "random": 2
+    },
+    "sp2": {
+        "scipy": 2
+    },
+    "MA": {
+        "numpy.ma": 3
+    },
+    "m3d": {
+        "mpl_toolkits.mplot3d": 1
+    },
+    "ssp": {
+        "scipy.sparse": 2,
+        "scipy.spatial": 1,
+        "scipy.special": 1
+    },
+    "land": {
+        "numpy.logical_and": 2
+    },
+    "a2d": {
+        "numpy.atleast_2d": 2
+    },
+    "_num": {
+        "numpy": 5
+    },
+    "rec": {
+        "numpy.lib.recfunctions": 2
+    },
+    "spln": {
+        "scipy.sparse.linalg": 2
+    },
+    "eigenValuesAndVectors": {
+        "numpy.linalg.eig": 1
+    },
+    "gp": {
+        "sklearn.gaussian_process": 4
+    },
+    "nu": {
+        "numpy": 2
+    },
+    "FB": {
+        "scipy.linalg.blas": 2
+    },
+    "nprandom": {
+        "numpy.random.normal": 1
+    },
+    "E1": {
+        "scipy.linalg.eigh": 2
+    },
+    "E2": {
+        "scipy.sparse.linalg.eigsh": 2
+    },
+    "nprand": {
+        "numpy.random": 2
+    },
+    "scio": {
+        "scipy.io": 2
+    },
+    "rdm": {
+        "random": 1,
+        "numpy.random": 1
+    },
+    "mf": {
+        "scipy.ndimage.minimum_filter": 2
+    },
+    "Sci": {
+        "scipy": 1
+    },
+    "mst": {
+        "scipy.stats.mstats": 1
+    },
+    "rd2": {
+        "scipy.stats.mstats.rankdata": 2
+    },
+    "nlr": {
+        "numpy.lib.recfunctions": 6
+    },
+    "narray": {
+        "numpy.array": 1
+    },
+    "Num": {
+        "numpy": 1
+    },
+    "rf": {
+        "numpy.lib.recfunctions": 32
+    },
+    "sysinfo": {
+        "numpy.distutils.system_info": 5
+    },
+    "scsp": {
+        "scipy.sparse": 4
+    },
+    "fftp": {
+        "scipy.fftpack": 2
+    },
+    "spdist": {
+        "scipy.spatial.distance": 2
+    },
+    "nap": {
+        "numpy": 2
+    },
+    "simplex": {
+        "scipy.optimize.fmin": 2
+    },
+    "scip": {
+        "scipy": 2
+    },
+    "fp": {
+        "scipy.fftpack": 3
+    },
+    "NU": {
+        "numpy": 2
+    },
+    "mtx": {
+        "numpy.matrix": 2
+    },
+    "npct": {
+        "numpy.ctypeslib": 8
+    },
+    "S": {
+        "scipy.sparse": 2
+    },
+    "sse": {
+        "scipy.special": 4
+    },
+    "sss": {
+        "scipy.stats": 2
+    },
+    "spsl": {
+        "scipy.sparse.linalg": 1
+    },
+    "scint": {
+        "scipy.integrate": 4
+    },
+    "show_numpy_config": {
+        "show_config": 4,
+        "numpy.show_config": 2
+    },
+    "spa": {
+        "scipy.sparse": 2,
+        "scipy.cluster.vq": 1
+    },
+    "scidist": {
+        "scipy.spatial.distance": 2
+    },
+    "syfp": {
+        "scipy.fftpack": 5
+    },
+    "spe": {
+        "scipy.special": 2
+    },
+    "msc": {
+        "scipy.misc": 1
+    },
+    "scial": {
+        "scipy.sparse.linalg": 2
+    },
+    "scisp": {
+        "scipy.sparse": 3
+    },
+    "RFR": {
+        "sklearn.ensemble.RandomForestRegressor": 3
+    },
+    "RF": {
+        "numpy.lib.recfunctions": 1,
+        "sklearn.ensemble.RandomForestClassifier": 1
+    },
+    "rgi": {
+        "scipy.interpolate.RegularGridInterpolator": 3
+    },
+    "mini": {
+        "scipy.optimize.minimize": 3,
+        "scipy.optimize.fmin_cobyla": 2,
+        "scipy.optimize.least_squares": 1
+    },
+    "spt": {
+        "scipy.spatial": 2
+    },
+    "irp": {
+        "scipy.interpolate": 3
+    },
+    "sopt": {
+        "scipy.optimize": 4
+    },
+    "spspar": {
+        "scipy.sparse": 2
+    },
+    "kdtree": {
+        "scipy.spatial.cKDTree": 2,
+        "scipy.spatial.KDTree": 1
+    },
+    "sp_block_diag": {
+        "scipy.sparse.block_diag": 2
+    },
+    "cp": {
+        "numpy": 1
+    },
+    "nrec": {
+        "numpy.lib.recfunctions": 1
+    },
+    "scist": {
+        "scipy.stats": 4
+    },
+    "mproc": {
+        "multiprocessing": 1
+    },
+    "sigs": {
+        "scipy.signal": 4
+    },
+    "sla": {
+        "scipy.sparse.linalg": 6,
+        "scipy.linalg": 3
+    },
+    "sciopt": {
+        "scipy.optimize": 4
+    },
+    "ch": {
+        "scipy.cluster.hierarchy": 2
+    },
+    "npo": {
+        "numpy": 1
+    },
+    "wave": {
+        "scipy.io.wavfile": 6
+    },
+    "gridController": {
+        "grid": 1
+    },
+    "pilimage": {
+        "PIL.Image": 1
+    },
+    "mvnorm": {
+        "scipy.stats.multivariate_normal": 4
+    },
+    "poissonN": {
+        "numpy.random.poisson": 2
+    },
+    "spla": {
+        "scipy.sparse.linalg": 4
+    },
+    "scipy_linalg": {
+        "scipy.linalg": 2
+    },
+    "numpy_linalg": {
+        "numpy.linalg": 2
+    },
+    "scInt": {
+        "scipy.interpolate": 1
+    },
+    "SHIT": {
+        "numpy": 2
+    },
+    "dt64": {
+        "numpy.datetime64": 1
+    },
+    "td64": {
+        "numpy.timedelta64": 1
+    },
+    "normsp": {
+        "scipy.linalg.norm": 2
+    },
+    "normnp": {
+        "numpy.linalg.norm": 2
+    },
+    "L": {
+        "scipy.special.genlaguerre": 1,
+        "numpy.linalg": 1
+    },
+    "wavr": {
+        "scipy.io.wavfile.read": 2
+    },
+    "wavw": {
+        "scipy.io.wavfile.write": 2
+    },
+    "morpho": {
+        "scipy.ndimage.morphology": 1
+    },
+    "sl": {
+        "scipy.sparse.linalg": 4,
+        "scipy.linalg": 1
+    },
+    "npm": {
+        "numpy.matlib": 2
+    },
+    "recfun": {
+        "numpy.lib.recfunctions": 1
+    },
+    "_ast": {
+        "numpy.lib.stride_tricks.as_strided": 1
+    },
+    "dtc": {
+        "sklearn.tree.DecisionTreeClassifier": 5
+    },
+    "sciim": {
+        "scipy.ndimage": 2
+    },
+    "acc": {
+        "sklearn.metrics.accuracy_score": 2
+    },
+    "conv2d": {
+        "scipy.signal.convolve2d": 2
+    },
+    "_np": {
+        "numpy": 4
+    },
+    "coo": {
+        "scipy.sparse.coo_matrix": 1
+    },
+    "np_assert_allclose": {
+        "numpy.testing.assert_allclose": 1
+    },
+    "NLA": {
+        "numpy.linalg": 1
+    },
+    "sw": {
+        "scipy.io.wavfile": 2
+    },
+    "_Pool": {
+        "multiprocessing.Pool": 1
+    },
+    "sp_la": {
+        "scipy.linalg": 1
+    },
+    "euclidean_": {
+        "scipy.spatial.distance.euclidean": 1
+    },
+    "sim": {
+        "scipy.ndimage": 1
+    },
+    "sigmoid": {
+        "scipy.special.expit": 3
+    },
+    "r1": {
+        "scipy.sparse.rand": 4
+    },
+    "r2": {
+        "numpy.random.rand": 4
+    },
+    "itv": {
+        "interval": 1
+    },
+    "NPfloat16": {
+        "numpy.float16": 1
+    },
+    "NPasarray": {
+        "numpy.asarray": 1
+    },
+    "ti": {
+        "time": 1
+    },
+    "np_f": {
+        "numpy.core.defchararray": 1
+    },
+    "bd_sp": {
+        "scipy.sparse.block_diag": 2
+    },
+    "bd_la": {
+        "scipy.linalg.block_diag": 2
+    },
+    "lg": {
+        "numpy.linalg": 2,
+        "scipy.linalg": 1,
+        "scipy.sparse.linalg": 1
+    },
+    "slinalg": {
+        "scipy.sparse.linalg": 2
+    },
+    "ip": {
+        "scipy.interpolate": 3
+    },
+    "plyt": {
+        "matplotlib.pyplot": 1
+    },
+    "sprsla": {
+        "scipy.sparse.linalg": 2
+    },
+    "cheb": {
+        "numpy.polynomial.chebyshev": 1
+    },
+    "snt": {
+        "scipy.integrate": 2
+    },
+    "snd": {
+        "scipy.ndimage": 1
+    },
+    "smc": {
+        "scipy.misc": 2
+    },
+    "skle": {
+        "sklearn.ensemble": 1
+    },
+    "skd": {
+        "sklearn.decomposition": 4,
+        "sklearn.datasets": 1
+    },
+    "sn": {
+        "scipy.ndimage": 4,
+        "sklearn.neighbors": 1
+    },
+    "lor": {
+        "sklearn.linear_model.LogisticRegression": 2
+    },
+    "π\n": {
+        "numpy.pi": 1
+    },
+    "np_fftn": {
+        "numpy.fft.fftn": 2
+    },
+    "splabel": {
+        "scipy.ndimage.label": 1
+    },
+    "geek": {
+        "numpy": 1
+    },
+    "bvp": {
+        "scipy.integrate.solve_bvp": 1
+    },
+    "G": {
+        "scipy.special.gamma": 1
+    },
+    "Np": {
+        "numpy": 1
+    },
+    "int": {
+        "scipy.integrate": 1
+    },
+    "smp": {
+        "scipy.misc": 3
+    },
+    "pil_image": {
+        "PIL.Image": 1
+    },
+    "skm": {
+        "sklearn.metrics": 2
+    },
+    "aps": {
+        "sklearn.metrics.average_precision_score": 4
+    },
+    "ln": {
+        "scipy.linalg": 2
+    },
+    "prc": {
+        "sklearn.metrics.precision_recall_curve": 2
+    },
+    "Img": {
+        "PIL.Image": 3
+    },
+    "ohe": {
+        "sklearn.preprocessing.OneHotEncoder": 4
+    },
+    "mup": {
+        "multiprocessing": 2
+    },
+    "pltl": {
+        "matplotlib.pyplot": 1
+    },
+    "euc": {
+        "sklearn.metrics.pairwise.euclidean_distances": 1
+    },
+    "rcf": {
+        "numpy.lib.recfunctions": 1
+    },
+    "stats_mode": {
+        "scipy.stats.mode": 2
+    },
+    "scilin": {
+        "scipy.linalg": 2
+    },
+    "ds": {
+        "scipy.spatial.distance": 2
+    },
+    "make_tuple": {
+        "ast.literal_eval": 2
+    },
+    "cosine_distance": {
+        "scipy.spatial.distance.cosine": 4
+    },
+    "wavf": {
+        "scipy.io.wavfile": 1
+    },
+    "np1": {
+        "numpy": 1
+    },
+    "np2": {
+        "numpy": 1
+    },
+    "get_numpy_include": {
+        "get_include": 1
+    },
+    "srfft": {
+        "scipy.fftpack.rfft": 2
+    },
+    "qr_numpy": {
+        "numpy.linalg.qr": 4
+    },
+    "qr_scipy": {
+        "scipy.linalg.qr": 4
+    },
+    "np_pinv": {
+        "numpy.linalg.pinv": 2
+    },
+    "scipy_pinv": {
+        "scipy.linalg.pinv": 2
+    },
+    "mps": {
+        "multiprocessing": 1
+    },
+    "spec": {
+        "scipy.special": 5
+    },
+    "onp": {
+        "numpy": 1
+    },
+    "skms": {
+        "sklearn.model_selection": 2
+    },
+    "imge": {
+        "PIL.Image": 1
+    },
+    "npma": {
+        "numpy.ma": 1
+    },
+    "queue": {
+        "collections.deque": 1
+    },
+    "windows": {
+        "numpy.lib.stride_tricks.sliding_window_view": 2
+    },
+    "cd": {
+        "collections.defaultdict": 1
+    },
+    "its": {
+        "itertools": 1
+    },
+    "arrayModule": {
+        "array": 1
+    },
+    "PIL_Image": {
+        "PIL.Image": 1
+    },
+    "cts": {
+        "ctypes": 3
+    },
+    "US": {
+        "scipy.interpolate.UnivariateSpline": 2
+    },
+    "classifier": {
+        "sklearn.svm.SVC": 1
+    },
+    "CV": {
+        "sklearn.feature_extraction.text.CountVectorizer": 1
+    },
+    "sp_randint": {
+        "scipy.stats.randint": 8
+    },
+    "suppmach": {
+        "sklearn.svm": 1
+    },
+    "dataset": {
+        "sklearn.datasets": 1
+    },
+    "se": {
+        "sklearn.ensemble": 1
+    },
+    "ext": {
+        "sklearn.feature_extraction.text": 1
+    },
+    "tf": {
+        "sklearn.feature_extraction.text.TfidfVectorizer": 1
+    },
+    "MNB": {
+        "sklearn.naive_bayes.MultinomialNB": 2
+    },
+    "DTC": {
+        "sklearn.tree.DecisionTreeClassifier": 2
+    },
+    "sklearnPCA": {
+        "sklearn.decomposition.PCA": 1
+    },
+    "lda": {
+        "sklearn.discriminant_analysis.LinearDiscriminantAnalysis": 2
+    },
+    "LDA": {
+        "sklearn.discriminant_analysis.LinearDiscriminantAnalysis": 11
+    },
+    "ms": {
+        "sklearn.model_selection": 4,
+        "sklearn.metrics": 1
+    },
+    "scikit_learn": {
+        "sklearn": 1
+    },
+    "KNN": {
+        "sklearn.neighbors.KNeighborsClassifier": 2
+    },
+    "curves": {
+        "sklearn.model_selection": 1
+    },
+    "linmod": {
+        "sklearn.linear_model": 1
+    },
+    "Lgr": {
+        "sklearn.linear_model.LogisticRegression": 2
+    },
+    "GPR": {
+        "sklearn.gaussian_process.GaussianProcessRegressor": 1
+    },
+    "KNC": {
+        "sklearn.neighbors.KNeighborsClassifier": 1
+    },
+    "LR": {
+        "sklearn.linear_model.LinearRegression": 2
+    },
+    "vstack_sparse_matrices": {
+        "scipy.sparse.vstack": 1
+    },
+    "LE": {
+        "sklearn.preprocessing.LabelEncoder": 1
+    },
+    "OHE": {
+        "sklearn.preprocessing.OneHotEncoder": 1
+    },
+    "skp": {
+        "sklearn.preprocessing": 1
+    },
+    "sklin": {
+        "sklearn.linear_model": 1
+    },
+    "pdp": {
+        "pandas.plotting": 1
+    },
+    "QDA": {
+        "sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis": 1
+    },
+    "Elastic": {
+        "sklearn.linear_model.ElasticNet": 1
+    },
+    "GBM": {
+        "sklearn.ensemble.GradientBoostingRegressor": 1
+    },
+    "ng": {
+        "sklearn.neighbors": 1
+    },
+    "NN": {
+        "sklearn.neural_network.MLPClassifier": 1
+    },
+    "KMeans_SKL": {
+        "sklearn.cluster.KMeans": 1
+    },
+    "StandardScaler_SKL": {
+        "sklearn.preprocessing.StandardScaler": 1
+    },
+    "sparse_lsqr": {
+        "scipy.sparse.linalg.lsqr": 1
+    },
+    "plp": {
+        "matplotlib.pyplot": 1
+    },
+    "sklm": {
+        "sklearn.metrics": 1
+    },
+    "skml": {
+        "sklearn.linear_model": 1
+    },
+    "ABC": {
+        "sklearn.ensemble.AdaBoostClassifier": 1
+    },
+    "RFC": {
+        "sklearn.ensemble.RandomForestClassifier": 1
+    },
+    "nn": {
+        "sklearn.neural_network": 2
+    },
+    "GBR": {
+        "sklearn.ensemble.GradientBoostingRegressor": 1
+    },
+    "REAL": {
+        "numpy.float32": 1
+    },
+    "NB": {
+        "sklearn.naive_bayes.MultinomialNB": 1
+    },
+    "su": {
+        "sklearn.utils": 1
+    },
+    "KN": {
+        "sklearn.neighbors.KNeighborsClassifier": 1
+    },
+    "GP": {
+        "sklearn.gaussian_process.GaussianProcessClassifier": 1,
+        "sklearn.gaussian_process.GaussianProcessRegressor": 1
+    },
+    "skGridSearchCV": {
+        "sklearn.model_selection.GridSearchCV": 1
+    },
+    "cosineSimilarity": {
+        "sklearn.metrics.pairwise.cosine_similarity": 1
+    },
+    "Imputer": {
+        "sklearn.impute.SimpleImputer": 1
+    },
+    "Knn": {
+        "sklearn.neighbors.KNeighborsClassifier": 1
+    },
+    "ttsplit": {
+        "sklearn.model_selection.train_test_split": 1
+    },
+    "splitter": {
+        "sklearn.model_selection.train_test_split": 1
+    },
+    "AUC": {
+        "sklearn.metrics.roc_auc_score": 1
+    },
+    "rfc": {
+        "sklearn.ensemble.RandomForestClassifier": 1
+    },
+    "RandomForest": {
+        "sklearn.ensemble.RandomForestClassifier": 1
+    },
+    "linear_assignment": {
+        "scipy.optimize.linear_sum_assignment": 1
+    },
+    "MSE": {
+        "sklearn.metrics.mean_squared_error": 2
+    },
+    "dtr": {
+        "sklearn.tree.DecisionTreeRegressor": 1
+    },
+    "skKMeans": {
+        "sklearn.cluster.KMeans": 1
+    },
+    "R2": {
+        "sklearn.metrics.r2_score": 1
+    },
+    "_Pipeline": {
+        "sklearn.pipeline.Pipeline": 1
+    },
+    "skQT": {
+        "sklearn.preprocessing.QuantileTransformer": 1
+    },
+    "gbc": {
+        "sklearn.ensemble.GradientBoostingClassifier": 1
+    },
+    "tv": {
+        "sklearn.feature_extraction.text.TfidfVectorizer": 1
+    },
+    "met": {
+        "sklearn.metrics": 2
+    },
+    "t_dist": {
+        "scipy.stats.t": 1
+    },
+    "skfs": {
+        "sklearn.feature_selection": 1
+    },
+    "RFClassi": {
+        "sklearn.ensemble.RandomForestClassifier": 1
+    },
+    "HGBClassi": {
+        "sklearn.ensemble.HistGradientBoostingClassifier": 1
+    },
+    "DTClassi": {
+        "sklearn.tree.DecisionTreeClassifier": 1
+    },
+    "spar": {
+        "scipy.sparse": 1
+    },
+    "scopt": {
+        "scipy.optimize": 3
+    },
+    "SLA": {
+        "scipy.sparse.linalg": 1
+    },
+    "cf": {
+        "scipy.optimize.curve_fit": 1
+    },
+    "splinalg": {
+        "scipy.sparse.linalg": 1
+    },
+    "boot": {
+        "bootstrap": 1
+    },
+    "convolvesig": {
+        "scipy.signal.convolve": 1
+    },
+    "sciwav": {
+        "scipy.io.wavfile": 1
+    },
+    "nda": {
+        "numpy.ndarray": 1
+    },
+    "spopt": {
+        "scipy.optimize": 2
+    },
+    "sfft": {
+        "scipy.fftpack": 2
+    },
+    "SS": {
+        "scipy.signal": 1
+    },
+    "scipy_detrend": {
+        "scipy.signal.detrend": 1
+    },
+    "gev": {
+        "scipy.stats.genextreme": 5
+    },
+    "wf": {
+        "scipy.io.wavfile": 1
+    },
+    "genlag": {
+        "scipy.special.genlaguerre": 1
+    },
+    "hclus": {
+        "scipy.cluster.hierarchy": 1
+    },
+    "sp_linalg": {
+        "scipy.sparse.linalg": 1
+    },
+    "LAsp": {
+        "scipy.sparse.linalg": 1
+    },
+    "sgolay": {
+        "scipy.signal.savgol_filter": 1
+    },
+    "scipystats": {
+        "scipy.stats": 1
+    },
+    "ipl": {
+        "scipy.interpolate": 1
+    },
+    "scst": {
+        "scipy.stats": 1
+    },
+    "_scipy": {
+        "scipy": 1
+    },
+    "_mpl": {
+        "matplotlib": 1
+    },
+    "_types": {
+        "types": 1
+    },
+    "_plt": {
+        "matplotlib.pyplot": 1
+    },
+    "ODEint": {
+        "scipy.integrate.odeint": 1
+    },
+    "spk": {
+        "scipy.cluster.vq": 1
+    },
+    "_info": {
+        "numpy.info": 2
+    },
+    "sp_interp": {
+        "scipy.interpolate": 1
+    },
+    "spys": {
+        "scipy.stats": 1
+    },
+    "li": {
+        "scipy.sparse.linalg": 1
+    },
+    "spfft": {
+        "scipy.fftpack": 1
+    },
+    "bstat": {
+        "scipy.stats.binned_statistic": 1
+    },
+    "sp_int": {
+        "scipy.integrate": 1
+    },
+    "hicluster": {
+        "sklearn.cluster.AgglomerativeClustering": 1
+    },
+    "intplt": {
+        "scipy.interpolate": 1
+    },
+    "sciquad": {
+        "scipy.integrate.quadrature": 1
+    },
+    "mv": {
+        "scipy.stats.multivariate_normal": 1
+    },
+    "tdist": {
+        "scipy.stats.t": 2
+    },
+    "wavread": {
+        "scipy.io.wavfile.read": 1
+    },
+    "measures": {
+        "scipy.stats": 2
+    },
+    "SPC": {
+        "scipy.constants": 1
+    },
+    "optimizer": {
+        "scipy.optimize.fmin_l_bfgs_b": 1
+    },
+    "DE": {
+        "scipy.optimize.differential_evolution": 3
+    },
+    "spmat": {
+        "scipy.sparse.csc_matrix": 1
+    },
+    "kd": {
+        "scipy.spatial.KDTree": 1
+    },
+    "scipy_root": {
+        "scipy.optimize.root": 1
+    },
+    "inte": {
+        "scipy.integrate": 1
+    },
+    "scipy_fftpack": {
+        "scipy.fftpack": 2
+    },
+    "scipy_fft": {
+        "scipy.fft": 3
+    },
+    "gauss": {
+        "scipy.stats.norm": 1
+    },
+    "read_wav": {
+        "scipy.io.wavfile.read": 1
+    },
+    "linA": {
+        "scipy.linalg": 1
+    },
+    "gamma_func": {
+        "scipy.special.gamma": 1
+    },
+    "ty": {
+        "typing": 1
+    },
+    "nprd": {
+        "numpy.random": 1
+    },
+    "spfn": {
+        "scipy.special": 1
+    },
+    "optim": {
+        "scipy.optimize": 2
+    },
+    "scipy_min": {
+        "scipy.optimize.minimize": 2
+    },
+    "ndiag": {
+        "numpy.diag": 1
+    },
+    "nsqrt": {
+        "numpy.sqrt": 1
+    },
+    "sciint": {
+        "scipy.interpolate": 1
+    }
+}

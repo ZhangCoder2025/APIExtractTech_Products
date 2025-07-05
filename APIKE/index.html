@@ -1,0 +1,536 @@
+<!DOCTYPE html>  
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>APIKE</title>
+    <!-- 引入React、ReactDOM和Babel -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        font-size: 10pt;
+      }
+      .navbar {
+        background-color: #333;
+        padding: 10px;
+        color: #fff;
+        display: flex;
+        gap: 10px;
+      }
+      .navbar button {
+        background-color: #555;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-size: 10pt;
+      }
+      .navbar button:hover {
+        background-color: #777;
+      }
+      .navbar button.active {
+        background-color: #0d6efd;
+      }
+      /* 查询页面专用按钮样式 */
+      .query-type-btn {
+        background-color: #555;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-size: 10pt;
+      }
+      .query-type-btn:hover {
+        background-color: #777;
+      }
+      .query-type-btn.active {
+        background-color: #0d6efd;
+      }
+      .content {
+        padding: 20px;
+      }
+      .section {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+      .section h2 {
+        margin-top: 0;
+      }
+      .toggle-btn {
+        margin-bottom: 10px;
+      }
+      pre {
+        background: #eee;
+        padding: 10px;
+        border-radius: 3px;
+        white-space: pre-wrap;
+      }
+      textarea, input[type="text"] {
+        width: 100%;
+        font-size: 10pt;
+        padding: 5px;
+      }
+      textarea {
+        height: 80px;
+      }
+      .run-btn {
+        margin-top: 10px;
+        padding: 5px 10px;
+        font-size: 10pt;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- 使用Babel编写JSX代码 -->
+    <script type="text/babel">
+      const { useState } = React;
+      
+      // “知识抽取”页面组件
+      function KnowledgeExtractionPage() {
+        const [inputText, setInputText] = useState("");
+        const [runText, setRunText] = useState("");
+        const [showPreprocessing, setShowPreprocessing] = useState(true);
+        const [showEntityRec, setShowEntityRec] = useState(true);
+        const [showFullLinking, setShowFullLinking] = useState(true);
+        const [showContextDependency, setShowContextDependency] = useState(true);
+        const [showContextCompletion, setShowContextCompletion] = useState(true);
+        const [showExtractionResult, setShowExtractionResult] = useState(true);
+        const [feedback, setFeedback] = useState("");
+
+        // 新增状态
+        const [sentences, setSentences] = useState([]);
+        const [apiEntities, setApiEntities] = useState([]);
+        const [linkedApis, setLinkedApis] = useState([]);
+        const [ctxDependent, setCtxDependent] = useState([]);
+        const [completions, setCompletions] = useState([]);
+        const [organizedData, setOrganizedData] = useState([]); 
+
+        async function handleRun() {
+          // 回显输入
+          setRunText(inputText);
+
+          // 1. 文本预处理
+          let res = await fetch('/text_process', {
+            method: 'POST',
+            headers: {'Content-Type':'application/json'},
+            body: JSON.stringify({ text: inputText })
+          });
+          let data = await res.json();
+          setSentences(data.sentences || []);
+
+          // 2. API 实体识别
+          res = await fetch('/api_recognition', {
+            method: 'POST',
+            headers: {'Content-Type':'application/json'},
+            body: JSON.stringify({ sentences: data.sentences })
+          });
+          data = await res.json();
+          setApiEntities(data.api_entities || []);
+
+          // 3. API 实体链接
+          res = await fetch('/api_link', {
+            method: 'POST',
+            headers: {'Content-Type':'application/json'},
+            body: JSON.stringify({ 
+                api_entities: data.api_entities,
+                sentences: data.sentences,        // 这是前面 setSentences 存下来的 processed_tokens
+                text: inputText              // 原始输入文本
+            })
+          });
+          data = await res.json();
+          setLinkedApis(data.linked || []);
+
+          // 4. 上下文依赖检测
+          res = await fetch('/cedcc', {
+            method: 'POST',
+            headers: {'Content-Type':'application/json'},
+            body: JSON.stringify({ linked: data.linked,
+                text: inputText
+             })
+          });
+          data = await res.json();
+          setCtxDependent(data.context_dependent || []);
+
+          res = await fetch('/context_complete', {
+            method: 'POST',
+            headers: {'Content-Type':'application/json'},
+            body: JSON.stringify({ context_dependent: data.context_dependent,
+                text: inputText
+             })
+          });
+          data = await res.json();
+          setCompletions(data.completions || []);
+
+          // 6. 组织知识 —— 调用你后端的知识组织函数
+        const orgRes = await fetch('/knowledge_organize', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                api_entities: data.api_entities,
+                linked:       data.linked,
+                context_dependent: data.context_dependent,
+                completions:  data.completions
+            })
+            });
+            const orgJson = await orgRes.json();
+            setOrganizedData(orgJson.data || []);
+
+        }
+        
+        return (
+          <div className="content">
+            <h1>API知识自动抽取工具-APIKE</h1>
+            <div className="section">
+              <h2>输入</h2>
+              <textarea
+                placeholder="在此输入案例文本，例如包含代码片段：plt.plot(x, y) 等"
+                value={inputText}
+                onChange={e => setInputText(e.target.value)}
+              />
+              <br />
+              <button className="run-btn" onClick={handleRun}>运行</button>
+            </div>
+            
+            {/* 文本预处理结果（动态渲染） */}
+            <div className="section">
+              <button className="toggle-btn" onClick={() => setShowPreprocessing(!showPreprocessing)}>
+                {showPreprocessing ? "隐藏" : "显示"} 文本预处理结果
+              </button>
+              {showPreprocessing && (
+                <div>
+                  <h2>文本预处理结果</h2>
+                  <div style={{ border: '1px solid #ddd', padding: '5px' }}>
+                    {sentences.map((s, i) => (
+                    <p key={i}>句子{i+1}: {JSON.stringify(s)}</p>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+            
+            {/* API 实体识别结果 */}
+            <div className="section">
+              <button className="toggle-btn" onClick={() => setShowEntityRec(!showEntityRec)}>
+                {showEntityRec ? "隐藏" : "显示"} API实体识别结果
+              </button>
+              {showEntityRec && (
+                <div>
+                  <h2>API实体识别结果(红色加粗标注)</h2>
+                  <div style={{ border: '1px solid #ddd', padding: '5px' }}>
+                    {apiEntities.map((frag, i) => (
+                      <p key={i} dangerouslySetInnerHTML={{ __html: `API知识片段${i+1}: ${frag}` }}/>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+            
+            {/* API 实体链接结果 */}
+            <div className="section">
+              <button className="toggle-btn" onClick={() => setShowFullLinking(!showFullLinking)}>
+                {showFullLinking ? "隐藏" : "显示"} API实体链接结果
+              </button>
+              {showFullLinking && (
+                <div>
+                  <h2>API实体链接结果</h2>
+                  <table style={{ width: 'auto', borderCollapse: 'collapse' }}>
+                    <thead>
+                      <tr>
+                        <th style={{ border: '1px solid #ddd', padding: '5px', width: '150px' }}>API实体</th>
+                        <th style={{ border: '1px solid #ddd', padding: '5px', width: '150px' }}>API全称</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {linkedApis.map((row, i) => (
+                        <tr key={i}>
+                          <td style={{ border: '1px solid #ddd', padding: '5px' }}>{row.entity}</td>
+                          <td style={{ border: '1px solid #ddd', padding: '5px' }}>{row.fqn}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+            
+            {/* 上下文依赖实体检测结果 */}
+            <div className="section">
+              <button className="toggle-btn" onClick={() => setShowContextDependency(!showContextDependency)}>
+                {showContextDependency ? "隐藏" : "显示"} 上下文依赖实体检测结果
+              </button>
+              {showContextDependency && (
+                <div>
+                  <h2>上下文依赖实体检测结果(蓝色加粗标注)</h2>
+                  <div style={{ border: '1px solid #ddd', padding: '5px' }}>
+                    {ctxDependent.map((frag, i) => (
+                      <p key={i} dangerouslySetInnerHTML={{ __html: `API知识片段${i+1}: ${frag}` }}/>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+            
+            {/* 上下文补全结果 */}
+            <div className="section">
+              <button className="toggle-btn" onClick={() => setShowContextCompletion(!showContextCompletion)}>
+                {showContextCompletion ? "隐藏" : "显示"} 上下文补全结果
+              </button>
+              {showContextCompletion && (
+                <div>
+                  <h2>上下文补全结果</h2>
+                  <table style={{ width: 'auto', borderCollapse: 'collapse' }}>
+                    <thead>
+                      <tr>
+                        <th style={{ border: '1px solid #ddd', padding: '5px', width: '180px' }}>上下文依赖实体</th>
+                        <th style={{ border: '1px solid #ddd', padding: '5px', width: '300px' }}>补全内容</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {completions.map((row, i) => (
+                        <tr key={i}>
+                          <td style={{ border: '1px solid #ddd', padding: '5px' }}>{row.entity}</td>
+                          <td style={{ border: '1px solid #ddd', padding: '5px' }}>{row.context}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+            
+            <div className="section">
+              <button className="toggle-btn" onClick={() => setShowExtractionResult(!showExtractionResult)}>
+                {showExtractionResult ? "隐藏" : "显示"} API知识抽取结果
+              </button>
+              {showExtractionResult && (
+                <div>
+                    <h2>API知识抽取结果</h2>
+                    {/* 存储按钮：入库 organizedData */}
+                    <button
+                    className="run-btn"
+                    style={{ marginBottom: '10px' }}
+                    onClick={async () => {
+                        const res = await fetch('/store_extraction', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ data: organizedData })
+                        });
+                        const r = await res.json();
+                        if (res.ok) {
+                        alert(`成功存储 ${r.count} 条记录`);
+                        } else {
+                        alert(`存储失败：${r.error}`);
+                        }
+                    }}
+                    >
+                    存储 API 知识抽取结果
+                    </button>
+
+                    <table style={{ width: 'auto', borderCollapse: 'collapse' }}>
+                    <thead>
+                        <tr>
+                        <th style={{ border: '1px solid #ddd', padding: '5px' }}>API</th>
+                        <th style={{ border: '1px solid #ddd', padding: '5px' }}>知识片段</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {organizedData.map((row, i) => (
+                        <tr key={i}>
+                            <td style={{ border: '1px solid #ddd', padding: '5px' }}>
+                            {row.api}
+                            </td>
+                            <td style={{ border: '1px solid #ddd', padding: '5px' }}>
+                            {row.snippet}
+                            </td>
+                        </tr>
+                        ))}
+                    </tbody>
+                    </table>
+                </div>
+                )}
+            </div>
+
+            <div className="section">
+                <h2>意见反馈</h2>
+                <textarea
+                    placeholder="请填写您对本工具的反馈建议……"
+                    value={feedback}
+                    onChange={e => setFeedback(e.target.value)}
+                    style={{ width: '100%', height: '100px', fontSize: '10pt', padding: '5px' }}
+                />
+                <br />
+                <button
+                    className="run-btn"
+                    onClick={async () => {
+                    if (!feedback.trim()) {
+                        alert('反馈内容不能为空');
+                        return;
+                    }
+                    // 调用后端接口
+                    const res = await fetch('/submit_feedback', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ feedback })
+                    });
+                    const data = await res.json();
+                    if (res.ok) {
+                        alert(`感谢您的反馈！`);
+                        setFeedback('');
+                    } else {
+                        alert(`提交失败：${data.error}`);
+                    }
+                    }}
+                >
+                提交反馈
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      // “知识查询”页面组件保持不变
+      function KnowledgeQueryPage() {
+        const [queryInput, setQueryInput] = useState("");
+        const [queryType, setQueryType] = useState("api");
+        const [feedback, setFeedback] = useState("");
+        const [queryResults, setQueryResults] = useState([]);
+        async function handleQuery() {
+            if (queryType === "api") {
+                const res = await fetch('/query_api', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ api: queryInput })
+                });
+                const data = await res.json();
+                setQueryResults(data.results || []);
+            } 
+            else if (queryType === "snippet") {
+                const res = await fetch('/query_snippet', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ snippet: queryInput })
+                });
+                const data = await res.json();
+                setQueryResults(data.results || []);
+                }
+            }
+
+        return (
+          <div className="content">
+            <h1>API知识自动抽取工具-APIKE</h1>
+            <div className="section">
+              <h2>查询</h2>
+              <div style={{ marginBottom: "10px" }}>
+                <button
+                  className={`query-type-btn ${queryType === "api" ? "active" : ""}`}
+                  onClick={() => setQueryType("api")}
+                >
+                  查询API
+                </button>
+                <button
+                  className={`query-type-btn ${queryType === "snippet" ? "active" : ""}`}
+                  onClick={() => setQueryType("snippet")}
+                  style={{ marginLeft: "10px" }}
+                >
+                  查询知识片段
+                </button>
+              </div>
+              <input
+                type="text"
+                placeholder={queryType === "api" ? "请输入API查询关键字" : "请输入知识片段查询关键字"}
+                value={queryInput}
+                onChange={(e) => setQueryInput(e.target.value)}
+              />
+              <button className="run-btn" onClick={handleQuery}>查询</button>
+            </div>
+            <div className="section">
+              <h2>查询结果</h2>
+              <table style={{ width: 'auto', borderCollapse: 'collapse' }}>
+                <thead>
+                  <tr>
+                    <th style={{ border: '1px solid #ddd', padding: '5px', width: '150px' }}>API</th>
+                    <th style={{ border: '1px solid #ddd', padding: '5px', width: '300px' }}>知识片段</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {queryResults.map((row, i) => (
+                        <tr key={i}>
+                            <td style={{ border: '1px solid #ddd', padding: '5px' }}>{row.API}</td>
+                            <td style={{ border: '1px solid #ddd', padding: '5px' }}>{row.snippet}</td>
+                        </tr>
+                        ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="section">
+              <h2>意见反馈</h2>
+              <textarea
+                placeholder="请填写您对本工具的反馈建议……"
+                value={feedback}
+                onChange={(e) => setFeedback(e.target.value)}
+              />
+              <br />
+              <button
+                className="run-btn"
+                onClick={async () => {
+                    if (!feedback.trim()) {
+                    alert('反馈内容不能为空');
+                    return;
+                    }
+                    const res = await fetch('/submit_feedback', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ feedback })
+                    });
+                    const data = await res.json();
+                    if (res.ok) {
+                    alert(`感谢您的反馈！`);
+                    setFeedback('');
+                    } else {
+                    alert(`提交失败：${data.error}`);
+                    }
+                }}
+                >
+                提交反馈
+                </button>
+            </div>
+          </div>
+        );
+      }
+
+      // 主App组件
+      function App() {
+        const [activeTab, setActiveTab] = useState("extract");
+        return (
+          <div>
+            <div className="navbar">
+              <button
+                className={activeTab === "extract" ? "active" : ""}
+                onClick={() => setActiveTab("extract")}
+              >
+                知识抽取
+              </button>
+              <button
+                className={activeTab === "query" ? "active" : ""}
+                onClick={() => setActiveTab("query")}
+              >
+                知识查询
+              </button>
+            </div>
+            {activeTab === "extract" && <KnowledgeExtractionPage />}
+            {activeTab === "query"   && <KnowledgeQueryPage />}
+          </div>
+        );
+      }
+
+      ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
+  </body>
+</html>
